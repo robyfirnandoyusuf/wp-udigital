@@ -1,0 +1,8 @@
+.wp-block-custom-gutenberg-blocks-image-content .row-meet {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.wp-block-custom-gutenberg-blocks-image-content img {
+    max-width: 500px;
+    margin-right: 100px;
+}
