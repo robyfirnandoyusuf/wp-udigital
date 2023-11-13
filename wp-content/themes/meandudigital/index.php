@@ -121,6 +121,7 @@
         </section> -->
         <section id="skills" class="skills">
             <div class="container" data-aos="fade-up">
+                
                 <?php
                 $args = array(
                     'id'           => 'meet-our-u-digital-team',
@@ -130,7 +131,15 @@
                 );
                 $custom_query = new WP_Query($args);
                 if ($custom_query->have_posts()) :
+                    ?>
+                    
+                    <?php
                     while ($custom_query->have_posts()) : $custom_query->the_post();
+                    ?>
+                    <h2 style="margin-left:650px;color:#F18330;">
+                        <?= the_title(); ?>
+                    </h2>
+                    <?php
                         the_content();
                     endwhile;
                 endif;
